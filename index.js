@@ -3,6 +3,7 @@ const prompt = require('prompt-sync')();
 let command = '';
 let entered = '';
 const names = [];
+let path = []
 
 
 while(entered != 'QUIT'){
@@ -14,9 +15,10 @@ while(entered != 'QUIT'){
     }
 
     if(entered == 'START'){
-        let name = prompt ('Awesome! First, what is your name?')
+        let name = prompt ('Awesome! First, what is your name? ')
         names.push (name)
-        console.log(names)
+        console.log("Hi ",(names),'!')
+        let path = prompt ('Which door will you take? Left or right?')
     }
     
     
