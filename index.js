@@ -19,6 +19,5 @@ while(entered != 'QUIT'){
         console.log(names)
     }
     
-        
     
 };
