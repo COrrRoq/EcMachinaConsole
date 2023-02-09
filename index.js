@@ -18,9 +18,14 @@ while (entered != 'QUIT') {
         let name = prompt('Awesome! First, what is your name? ')
         names.push(name)
         console.log("Hi ", (names), '!')
+
         let path = prompt('Which door will you take? Left or right?')
+        let entered = 'LEFT'
+        if (entered == 'LEFT') {
+            prompt('You fall into a spike pit and die. Start again? Y/N');
         }
-    };
+    }
+};
 
 
 
