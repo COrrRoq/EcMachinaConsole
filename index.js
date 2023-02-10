@@ -23,6 +23,10 @@ while (entered != 'QUIT') {
         let entered = 'LEFT'
         if (entered == 'LEFT') {
             prompt('You fall into a spike pit and die. Start again? Y/N');
+            let entered = 'RIGHT'
+            if (entered == 'RIGHT') {
+                prompt('You continue down the corridor. You come to a set of doors. Left or right?');
+            }
         }
     }
 };
